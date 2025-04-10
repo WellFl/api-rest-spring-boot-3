@@ -82,10 +82,10 @@ Na pasta `/documentacao` você encontrará:
 
 #### 🧩 Diagrama de Classe
 
-<img src="documentacao/diagrama-classe.png" alt="Diagrama de Classe" width="600"/>
+<img src="documentacao/diagramas/classe_task.png" alt="Diagrama de Classe" width="500"/>
 
 #### 🌐 Diagrama de Endpoints
 
-<img src="documentacao/diagrama-endpoints.png" alt="Diagrama de Endpoints" width="600"/>
+<img src="documentacao/diagramas/endpoints_api.png" alt="Diagrama de Endpoints" width="500"/>
 
 
