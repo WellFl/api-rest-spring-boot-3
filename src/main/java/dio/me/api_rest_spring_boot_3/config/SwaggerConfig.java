@@ -7,13 +7,12 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class SwaggerConfig {
-
     @Bean
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("📌 API de Tarefas")
-                        .version("1.0.0")
-                        .description("🚀 API REST com Spring Boot 3, Java 17 e Swagger para gerenciamento de tarefas."));
+                        .title("API de Tarefas")
+                        .version("1.0")
+                        .description("Documentação da API para gerenciamento de tarefas."));
     }
 }
