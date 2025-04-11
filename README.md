@@ -1,47 +1,73 @@
-# 📌 API REST com Spring Boot 3 - Gerenciador de Tarefas
+# 📌 API REST de Tarefas
 
-Projeto desenvolvido como prática de estudos em Java utilizando Spring Boot 3. O objetivo é construir uma API REST simples para gerenciamento de tarefas (to-do list), com funcionalidades básicas de CRUD.
+Uma API RESTful desenvolvida com **Spring Boot 3** e **Java 17** para gerenciar tarefas. Com suporte completo a operações CRUD, documentação com Swagger, banco de dados PostgreSQL e deploy no Railway.
 
-## ✅ Funcionalidades
+---
+## 🔗 Link da API em Produção
 
-- [x] Criar uma nova tarefa
-- [x] Listar todas as tarefas
-- [x] Buscar uma tarefa por ID
-- [x] Atualizar uma tarefa existente
-- [x] Deletar uma tarefa
+👉 [https://api-rest-spring-boot-3-production.up.railway.app](https://api-rest-spring-boot-3-production.up.railway.app)
 
-## 🛠️ Tecnologias e Ferramentas Utilizadas
+---
+## 📚 Documentação Swagger
+
+Acesse a documentação interativa da API:
+
+👉 [https://api-rest-spring-boot-3-production.up.railway.app/swagger-ui.html](https://api-rest-spring-boot-3-production.up.railway.app/swagger-ui.html)
+
+---
+
+
+## 📦 Funcionalidades
+
+- ✅ Criar tarefas
+- ✅ Listar todas as tarefas
+- ✅ Buscar tarefa por ID
+- ✅ Atualizar uma tarefa existente
+- ✅ Remover tarefa
+
+---
+
+## 🛠️ Tecnologias Utilizadas
 
 - **Java 17**
-- **Spring Boot 3.4.4**
-- **Spring Web**
+- **Spring Boot 3**
 - **Spring Data JPA**
-- **Banco de Dados H2 (em memória)**
-- **Postman** para testes dos endpoints
-- **Maven** para gerenciamento de dependências
-- **IDE IntelliJ / VS Code**
-- **Diagramas UML** e documentação em PDF
+- **PostgreSQL**
+- **SpringDoc Swagger UI**
+- **Railway (Deploy e Banco de Dados)**
+- **Maven**
 
-## 🚀 Como Executar o Projeto
+---
+
+## 📁 Estrutura da API
+
+- `TaskController` – Controller com todos os endpoints da API
+- `Task` – Entidade principal com campos `id`, `title`, `description`, `completed`
+- `TaskRepository` – Interface JPA para persistência
+
+---
+
+## 🚀 Como Rodar Localmente
 
 ### Pré-requisitos
 
-- Java 17 instalado
-- Maven instalado
-- IDE como IntelliJ IDEA ou VS Code
+- Java 17
+- Maven
+- PostgreSQL (ou usar o Railway)
 
-### Passo a passo
+---
 
-Clone o projeto e execute com Maven:
+### Passos
 
 ```bash
 # Clone o repositório
 git clone https://github.com/WellFl/api-rest-spring-boot-3.git
 cd api-rest-spring-boot-3
-
-# Execute o projeto com o Maven
-./mvnw spring-boot:run
 ```
+---
+
+# Execute o projeto
+./mvnw spring-boot:run
 
 ## 📫 Endpoints da API
 
@@ -52,6 +78,8 @@ cd api-rest-spring-boot-3
 | POST   | `/tasks`            | Cria uma nova tarefa                   |
 | PUT    | `/tasks/{id}`       | Atualiza uma tarefa existente pelo ID  |
 | DELETE | `/tasks/{id}`       | Deleta uma tarefa pelo ID              |
+
+---
 
 ## 🧪 Testando a API com Postman
 
@@ -70,6 +98,8 @@ Você pode testar todos os endpoints da API utilizando o Postman.
   "completed": false
 }
 ```
+---
+
 ## 📄 Documentação e Diagramas
 
 Na pasta `/documentacao` você encontrará:
